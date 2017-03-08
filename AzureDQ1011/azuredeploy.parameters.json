@@ -52,6 +52,15 @@
     },
     "nodeVMNamePrefix": {
       "value": "WNVM"
-    }
+    },
+      "infamrsdbpassword": {
+          "value": "tempBG@2008dqqa1"
+      },
+      "infarefdatadbpassword": {
+          "value": "tempBG@2008dqqa2"
+      },
+      "infaprofiledbpassword": {
+          "value": "tempBG@2008dqqa3"
+      }
   }
 }
