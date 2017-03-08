@@ -246,7 +246,7 @@
           "description": "Base URL for Marketplace",
           "artifactsBaseUrl": "https://raw.githubusercontent.com/anandamit/AzureDQ1011/master/AzureDQ1011"
         },
-        "defaultValue": "https://raw.githubusercontent.com/anandamit/AzureDQ1011/master/AzureDQ1011/"
+        "defaultValue": "https://raw.githubusercontent.com/anandamit/AzureDQ1011/master/AzureDQ1011"
       },
       "infamrsdbusername": {
         "type": "string",
