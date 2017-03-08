@@ -240,14 +240,44 @@
                 "description": "Informatica domain license key file url"
             }
         },
-        "baseUrl": {
-            "type": "string",
-            "metadata": {
-                "description": "Base URL for Marketplace",
-                "artifactsBaseUrl": "https://raw.githubusercontent.com/vijayanand17/infapc10.1.1/master"
-            },
-            "defaultValue": "https://raw.githubusercontent.com/vijayanand17/infapc10.1.1/master"
+      "baseUrl": {
+        "type": "string",
+        "metadata": {
+          "description": "Base URL for Marketplace",
+          "artifactsBaseUrl": "https://raw.githubusercontent.com/anandamit/AzureDQ1011/master/AzureDQ1011"
         },
+        "defaultValue": "https://raw.githubusercontent.com/anandamit/AzureDQ1011/master/AzureDQ1011/"
+      },
+      "infamrsdbusername": {
+        "type": "string",
+        "defaultValue": "mrsdb",
+        "metadata": {
+          "description": "Database user for Model repository service"
+        }
+      },
+      "infamrsdbpassword": {
+        "type": "securestring"
+      },
+      "infarefdatadbusername": {
+        "type": "string",
+        "defaultValue": "cmsdb",
+        "metadata": {
+          "description": "Database user for Reference Data DB"
+        }
+      },
+      "infarefdatadbpassword": {
+        "type": "securestring"
+      },
+      "infaprofiledbusername": {
+        "type": "string",
+        "defaultValue": "profiledb",
+        "metadata": {
+          "description": "Database user for Profile DB"
+        }
+      },
+      "infaprofiledbpassword": {
+        "type": "securestring"
+      },
         "informaticaTags": {
             "type": "object",
             "defaultValue": {
@@ -415,9 +445,27 @@
                     "dbUser": {
                         "value": "[parameters('dbUser')]"
                     },
-                    "dbPassword": {
-                        "value": "[parameters('dbPassword')]"
-                    },
+                  "dbPassword": {
+                    "value": "[parameters('dbPassword')]"
+                  },
+                  "mrsdbuser": {
+                    "value": "[parameters('infamrsdbusername')]"
+                  },
+                  "mrsdbpwd": {
+                    "value": "[parameters('infamrsdbpassword')]"
+                  },
+                  "refdatadbuser": {
+                    "value": "[parameters('infarefdatadbusername')]"
+                  },
+                  "refdatadbpwd": {
+                    "value": "[parameters('infarefdatadbpassword')]"
+                  },
+                  "profiledbuser": {
+                    "value": "[parameters('infaprofiledbusername')]"
+                  },
+                  "profiledbpwd": {
+                    "value": "[parameters('infaprofiledbpassword')]"
+                  },
                     "vnetName": {
                         "value": "[parameters('vnetName')]"
                     },
